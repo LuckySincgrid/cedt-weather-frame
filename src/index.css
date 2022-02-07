@@ -1,17 +1,28 @@
+html {
+  height: fit-content;
+  width: 230px;
+  border: 2px solid #F26E3F;
+  border-radius: 1rem;
+}
+
 body {
   margin: 0;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  place-items: center;
 }
 
 #root {
   /* background-color: burlywood; */
   display: grid;
   place-items: center;
-  height: 100vh;
+  /* height: fit-content;
+  width: fit-content; */
 }
 
 code {

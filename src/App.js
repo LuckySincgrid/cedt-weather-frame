@@ -1,5 +1,8 @@
 import { useEffect , useState} from 'react';
 import './App.css';
+import Lottie from 'react-lottie'
+import animationData from './lotties/partly_cloudy.json';
+
 
 function App() {
   const API_KEY = "89c13ea938871f343abc1e564db2d8f9"
@@ -8,48 +11,43 @@ function App() {
   const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${longt}&appid=${API_KEY}`
 
   const [weatherdataJSON, setWeatherData] = useState({});
-  
-  // useEffect(() => {
-  //   // fetch(BASE_URL)
-  //   // .then(Response => Response.json())
-  //   // .then(data => setWeatherData(data.main))
 
-  //   // const timer = setTimeout(() => {
-  //   //   // fetchData();
-  //   //   console.log("Just to delay the api calls")
-  //   // }, 5000);
-
-
-  //   // console.log(weatherdataJSON)
-  //   // return () => clearTimeout(timer);
-  // }, [/*weatherdataJSON*/]) 
 
   useEffect(() => {
-    
-
     const timer = setTimeout(() => {
-      // fetchData();
       fetch(BASE_URL)
       .then(Response => Response.json())
       .then(data => setWeatherData(data.main))
       console.log("Just to delay the api calls")
-    }, 5000);
+    }, 3000);
 
 
     console.log(weatherdataJSON)
     return () => clearTimeout(timer);
   }, [weatherdataJSON]) 
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
   
   return (
     <div className="App">
       <div className="App_info">
-        <h2 className="Temp_text">Min. Temperature: {weatherdataJSON.temp_min}</h2>
-        <h2 className="Temp_text">Max. Temperature: {weatherdataJSON.temp_max}</h2>
-        <h2 className="Temp_text">Humidity: {weatherdataJSON.humidity}</h2>
+        <h2 className="Temp_text">Min. Temperature: {weatherdataJSON.temp_min}&deg;</h2>
+        <h2 className="Temp_text">Max. Temperature: {weatherdataJSON.temp_max}&deg;</h2>
+        <h2 className="Temp_text">Humidity: {weatherdataJSON.humidity}%</h2>
       </div>
       <div className="App_animation">
-         {/* this part will have animation */}
-         <iframe src="https://embed.lottiefiles.com/animation/4800"></iframe>
+         <Lottie 
+            options={defaultOptions}
+              height={50}
+              width={50}
+      />
       </div>  
     </div>
   );
