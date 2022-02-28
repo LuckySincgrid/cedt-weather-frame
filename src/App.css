@@ -4,12 +4,20 @@
   /* display: flex;
   justify-content: center;
   align-items: center; */
+  /* display: grid;
+  place-items: center;
+  grid-template-columns: 1.4fr .6fr;
+  column-gap: 35px;
+  margin: 0px auto; */
+  /* background-color: chartreuse; */
+}
+
+.wrapper {
   display: grid;
   place-items: center;
   grid-template-columns: 1.4fr .6fr;
   column-gap: 35px;
   margin: 0px auto;
-  /* background-color: chartreuse; */
 }
 
 .App_info {
