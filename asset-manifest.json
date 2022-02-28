@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cedt-weather-frame/static/css/main.d513f496.css",
-    "main.js": "/cedt-weather-frame/static/js/main.c9234c4a.js",
+    "main.css": "/cedt-weather-frame/static/css/main.b2907630.css",
+    "main.js": "/cedt-weather-frame/static/js/main.660c2e0f.js",
     "static/js/787.6bb60768.chunk.js": "/cedt-weather-frame/static/js/787.6bb60768.chunk.js",
     "index.html": "/cedt-weather-frame/index.html",
-    "main.d513f496.css.map": "/cedt-weather-frame/static/css/main.d513f496.css.map",
-    "main.c9234c4a.js.map": "/cedt-weather-frame/static/js/main.c9234c4a.js.map",
+    "main.b2907630.css.map": "/cedt-weather-frame/static/css/main.b2907630.css.map",
+    "main.660c2e0f.js.map": "/cedt-weather-frame/static/js/main.660c2e0f.js.map",
     "787.6bb60768.chunk.js.map": "/cedt-weather-frame/static/js/787.6bb60768.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d513f496.css",
-    "static/js/main.c9234c4a.js"
+    "static/css/main.b2907630.css",
+    "static/js/main.660c2e0f.js"
   ]
 }
