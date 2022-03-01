@@ -3,7 +3,7 @@
   height: 100%;
   border: 2px solid #F26E3F;
   border-radius: 1rem;
-  
+
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -18,7 +18,6 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  column-gap: 35px;
   margin: 0px auto;
 }
 
@@ -67,4 +66,8 @@
   bottom: 4px;
   right: 10px;
   color: #969696;
+}
+
+@media screen and (min-width: 200px) and (max-width: 310px) { 
+  
 }
