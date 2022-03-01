@@ -59,7 +59,7 @@ function App() {
           <div className="wrapper">
           <div className="App_info">
             {/* <h2 className="Temp_text">Altitude: {dataArray[val]?.iotasync_data?.alt}</h2> */}
-              <h2 className="Temp_text">Temperature: {tempState}&deg;</h2>
+              <h2 className="Temp_text">Temperature: {tempState}&deg;C</h2>
               <h2 className="Temp_text">Pressure: {pressureState} hPa</h2>
               <h2 className="Temp_text">Humidity: {humidityState}%</h2>
             </div>
