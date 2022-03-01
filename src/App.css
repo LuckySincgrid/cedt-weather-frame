@@ -23,8 +23,8 @@
 
 .App_info {
   /* background-color: aquamarine; */
-  padding-left: 0.5rem;
-  font-size: 0.43rem;
+  padding-left: 1rem;
+  font-size: 0.45rem;
   color: #F26E3F;
 }
 
@@ -42,13 +42,13 @@
 
 .lottie_image {
   position: absolute;
-  top: 6px;
-  right: 15px;
+  top: 12px;
+  right: 30px;
 }
 
 .status_dot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 100%;
   background-color: red;
   position: absolute;
@@ -62,9 +62,9 @@
 
 .last_update_text {
   position: absolute;
-  font-size: 7px;
+  font-size: 9px;
   bottom: 4px;
-  right: 10px;
+  right: 15px;
   color: #969696;
 }
 
