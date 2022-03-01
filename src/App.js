@@ -1,7 +1,5 @@
 import { useEffect , useState} from 'react';
 import './App.css';
-import Lottie from 'react-lottie'
-import animationData from './lotties/partly_cloudy.json';
 import axios from 'axios';
 import useTimeout from './useTimeout';
 import moon from './lotties/moon.svg'
@@ -63,16 +61,6 @@ function App() {
      return () => clearInterval(timer)
   }, [weatherdataJSON]) 
 
-
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
   
   return (
      <div className="App">
