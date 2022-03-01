@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/cedt-weather-frame/static/css/main.ef1a96d6.css",
-    "main.js": "/cedt-weather-frame/static/js/main.d4655190.js",
+    "main.css": "/cedt-weather-frame/static/css/main.3962869e.css",
+    "main.js": "/cedt-weather-frame/static/js/main.30eb10cc.js",
     "static/js/787.6bb60768.chunk.js": "/cedt-weather-frame/static/js/787.6bb60768.chunk.js",
+    "static/media/sun.svg": "/cedt-weather-frame/static/media/sun.d4369dd5766efae8297f79d17ba18094.svg",
+    "static/media/moon.svg": "/cedt-weather-frame/static/media/moon.286d2f94d74f7f55d2ea6b21afac5609.svg",
     "index.html": "/cedt-weather-frame/index.html",
-    "main.ef1a96d6.css.map": "/cedt-weather-frame/static/css/main.ef1a96d6.css.map",
-    "main.d4655190.js.map": "/cedt-weather-frame/static/js/main.d4655190.js.map",
+    "main.3962869e.css.map": "/cedt-weather-frame/static/css/main.3962869e.css.map",
+    "main.30eb10cc.js.map": "/cedt-weather-frame/static/js/main.30eb10cc.js.map",
     "787.6bb60768.chunk.js.map": "/cedt-weather-frame/static/js/787.6bb60768.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef1a96d6.css",
-    "static/js/main.d4655190.js"
+    "static/css/main.3962869e.css",
+    "static/js/main.30eb10cc.js"
   ]
 }
