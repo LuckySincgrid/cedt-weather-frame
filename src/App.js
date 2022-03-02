@@ -74,10 +74,10 @@ function App() {
           <div className="App_info">
             {/* <h2 className="Temp_text">Altitude: {dataArray[val]?.iotasync_data?.alt}</h2> */} 
                <h2 className="Temp_text">
-                Temperature: {weatherdataJSON[0]?.iotasync_data?.temp}
+                Temperature: {weatherdataJSON[0]?.iotasync_data?.temp}°C
               </h2>
-               <h2 className="Temp_text">Pressure: {weatherdataJSON[0]?.iotasync_data?.pressure}</h2>
-              <h2 className="Temp_text">Humidity: {weatherdataJSON[0]?.iotasync_data?.humidity}</h2>
+               <h2 className="Temp_text">Pressure: {weatherdataJSON[0]?.iotasync_data?.pressure} hPa</h2>
+              <h2 className="Temp_text">Humidity: {weatherdataJSON[0]?.iotasync_data?.humidity}%</h2>
             </div>
             <div className="App_animation">
               <div className={`status_dot ${weatherdataJSON?.status === "online" ? "status_dot_active" : "" }`}></div>
