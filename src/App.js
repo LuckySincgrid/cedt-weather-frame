@@ -10,17 +10,19 @@ function App() {
   const BASE_URL = `http://server2.sincgrid.com:5000/api/v1/cedt/weather-station-221`
 
   const [weatherdataJSON, setWeatherData] = useState({});
-  let val = 0;
+  // let val = 0;
   
   // const [tempState, setTempState] = useState(((Math.random()*10 + 20).toPrecision(2)));
   // const [pressureState, setPressureState] = useState((Math.floor((Math.random()*10 + 972).toFixed(3))));
   // const [humidityState, setHumidityState] = useState(((Math.random()*10 + 42).toPrecision(2)));
 
-  const fetchData = async () => {
-      await fetch(BASE_URL)
-            .then(Response => Response.json())
-            .then((dataToBeFetched) => setWeatherData(dataToBeFetched.data))
-            .catch((error) => console.error(error))
+  const fetchData = () => {
+      axios.get(BASE_URL)
+                        .then(Response => setWeatherData(Response.data.data))
+                        // .then(data)
+            // .then(Response => Response.json())
+            // .then((dataToBeFetched) => setWeatherData(dataToBeFetched.data))
+            // .catch((error) => console.error(error))
 
 
             // setTempState(weatherdataJSON?.data?.iotasync_data?.temp)
@@ -34,6 +36,13 @@ function App() {
   }
 
 
+  const AsyncFetchData = async () => {
+    await fetch(BASE_URL)
+          .then(Response => Response.json())
+          .then((dataToBeFetched) => setWeatherData(dataToBeFetched.data))
+          .catch((error) => console.error(error))  
+  }
+
 
   // const dataSetter = async () => {
   //   await setDataArray(Object.entries(weatherdataJSON).map(e => e[1]))
@@ -42,13 +51,15 @@ function App() {
   // let i = 0;
 
   useEffect(() => {
-    const timer = setInterval(fetchData, 4000);
+    // const timer = setInterval(fetchData, 10000);
+    fetchData()
+    const timer = setInterval(AsyncFetchData, 25000);
     // console.log("After function call")
     // console.log(weatherdataJSON.data[0])
     // console.log(weatherdataJSON.data[0])
     // console.log(weatherdataJSON.data[0])
 
-    console.log(weatherdataJSON)
+    // console.log(weatherdataJSON)
 
     return () => clearInterval(timer)
   }, []) 
